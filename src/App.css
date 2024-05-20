@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  box-sizing: border-box;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px; 
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #300606;
+  margin-right: 40px;
+  text-decoration:dashed
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+/* Button Styles */
+.btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Form Styles */
+.form-group {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  background-color: #120101;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+  margin-bottom: 10px;
+}
+
+.product-item p {
+  margin-bottom: 5px;
+}
+
+.product-item button {
+  padding: 6px 12px;
+  margin-top: 10px;
+}
+
+.product-form {
+  margin-bottom: 20px;
+}
+
+.product-list-container {
+  border: 1px solid #ccc; 
+  padding: 20px; 
+  border-radius: 5px; 
+  margin-bottom: 20px; 
+}
+
+.table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+th, td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+th {
+  background-color: #f2f2f2; 
+}
+
+.edit-button, .delete-button {
+  padding: 5px 5px; 
+  margin-right: 5px;
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  width: 60px;
+}
+
+.edit-button {
+  background-color: #007bff; 
+  color: #fff; 
+}
+
+.delete-button {
+  background-color: #dc3545; 
+  color: #fff; 
+}
+
+.button-right {
+  margin-left: auto;
+  background-color: #5298de;
+  color: white;
+}
+.button-left {
+  margin-left: 0.3%;
+  background-color: #84909b;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav {
+  display: flex;
+  align-items: center;
 }
